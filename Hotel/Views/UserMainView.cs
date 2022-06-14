@@ -10,21 +10,15 @@ using System.Windows.Forms;
 
 namespace Hotel.Views
 {
-    public partial class MainView : Form, IMainView
+    public partial class UserMainView : Form, IUserMainView
     {
-
-        public MainView()
+        public UserMainView()
         {
             InitializeComponent();
-            btnHotels.Click += delegate { ShowHotelView?.Invoke(this, EventArgs.Empty); };
+            btnUsers.Click += delegate { ShowUserView?.Invoke(this, EventArgs.Empty); };
+        }
 
-
-
-            }
-
-        public event EventHandler ShowHotelView;
         public event EventHandler ShowUserView;
-
-
+       
     }
 }

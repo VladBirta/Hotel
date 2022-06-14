@@ -32,5 +32,15 @@ namespace Hotel.Properties {
                 return ((string)(this["SqlConnection"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=UsersDb;Integrated Security=True")]
+        public string SqlConnectionUser {
+            get {
+                return ((string)(this["SqlConnectionUser"]));
+            }
+        }
     }
 }

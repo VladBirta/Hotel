@@ -2,7 +2,7 @@
 
 namespace Hotel.Views
 {
-    partial class HotelView
+    partial class UserView
     {
 
         /// <summary>
@@ -31,13 +31,14 @@ namespace Hotel.Views
         /// </summary>
         /// 
 
+
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageHotelList = new System.Windows.Forms.TabPage();
+            this.tabPageUserList = new System.Windows.Forms.TabPage();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -45,18 +46,22 @@ namespace Hotel.Views
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.tabPageHotelDetail = new System.Windows.Forms.TabPage();
+            this.tabPageUserDetail = new System.Windows.Forms.TabPage();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtUserRole = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUserPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtHotelName = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtHotelId = new System.Windows.Forms.TextBox();
+            this.txtUserId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPageHotelList.SuspendLayout();
+            this.tabPageUserList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.tabPageHotelDetail.SuspendLayout();
+            this.tabPageUserDetail.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +73,7 @@ namespace Hotel.Views
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "HOTELS";
+            this.label1.Text = "USERS";
             // 
             // panel1
             // 
@@ -93,8 +98,8 @@ namespace Hotel.Views
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPageHotelList);
-            this.tabControl1.Controls.Add(this.tabPageHotelDetail);
+            this.tabControl1.Controls.Add(this.tabPageUserList);
+            this.tabControl1.Controls.Add(this.tabPageUserDetail);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 56);
             this.tabControl1.Name = "tabControl1";
@@ -102,23 +107,23 @@ namespace Hotel.Views
             this.tabControl1.Size = new System.Drawing.Size(892, 411);
             this.tabControl1.TabIndex = 2;
             // 
-            // tabPagePetList
+            // tabPageUserList
             // 
-            this.tabPageHotelList.Controls.Add(this.dataGridView);
-            this.tabPageHotelList.Controls.Add(this.label2);
-            this.tabPageHotelList.Controls.Add(this.btnDelete);
-            this.tabPageHotelList.Controls.Add(this.btnEdit);
-            this.tabPageHotelList.Controls.Add(this.btnAddNew);
-            this.tabPageHotelList.Controls.Add(this.btnSearch);
-            this.tabPageHotelList.Controls.Add(this.txtSearch);
-            this.tabPageHotelList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageHotelList.Location = new System.Drawing.Point(4, 29);
-            this.tabPageHotelList.Name = "tabPageHotelList";
-            this.tabPageHotelList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHotelList.Size = new System.Drawing.Size(884, 378);
-            this.tabPageHotelList.TabIndex = 0;
-            this.tabPageHotelList.Text = "Hotel list";
-            this.tabPageHotelList.UseVisualStyleBackColor = true;
+            this.tabPageUserList.Controls.Add(this.dataGridView);
+            this.tabPageUserList.Controls.Add(this.label2);
+            this.tabPageUserList.Controls.Add(this.btnDelete);
+            this.tabPageUserList.Controls.Add(this.btnEdit);
+            this.tabPageUserList.Controls.Add(this.btnAddNew);
+            this.tabPageUserList.Controls.Add(this.btnSearch);
+            this.tabPageUserList.Controls.Add(this.txtSearch);
+            this.tabPageUserList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageUserList.Location = new System.Drawing.Point(4, 29);
+            this.tabPageUserList.Name = "tabPageUserList";
+            this.tabPageUserList.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUserList.Size = new System.Drawing.Size(884, 378);
+            this.tabPageUserList.TabIndex = 0;
+            this.tabPageUserList.Text = "User list";
+            this.tabPageUserList.UseVisualStyleBackColor = true;
             // 
             // dataGridView
             // 
@@ -143,7 +148,7 @@ namespace Hotel.Views
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Search hotel:";
+            this.label2.Text = "Search user:";
             // 
             // btnDelete
             // 
@@ -194,22 +199,26 @@ namespace Hotel.Views
             this.txtSearch.Size = new System.Drawing.Size(638, 26);
             this.txtSearch.TabIndex = 0;
             // 
-            // tabPagePetDetail
+            // tabPageUserDetail
             // 
-            this.tabPageHotelDetail.Controls.Add(this.btnCancel);
-            this.tabPageHotelDetail.Controls.Add(this.btnSave);
-            this.tabPageHotelDetail.Controls.Add(this.label4);
-            this.tabPageHotelDetail.Controls.Add(this.txtHotelName);
-            this.tabPageHotelDetail.Controls.Add(this.label3);
-            this.tabPageHotelDetail.Controls.Add(this.txtHotelId);
-            this.tabPageHotelDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageHotelDetail.Location = new System.Drawing.Point(4, 29);
-            this.tabPageHotelDetail.Name = "tabPageHotelDetail";
-            this.tabPageHotelDetail.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHotelDetail.Size = new System.Drawing.Size(884, 378);
-            this.tabPageHotelDetail.TabIndex = 1;
-            this.tabPageHotelDetail.Text = "Hotel detail";
-            this.tabPageHotelDetail.UseVisualStyleBackColor = true;
+            this.tabPageUserDetail.Controls.Add(this.btnCancel);
+            this.tabPageUserDetail.Controls.Add(this.btnSave);
+            this.tabPageUserDetail.Controls.Add(this.label6);
+            this.tabPageUserDetail.Controls.Add(this.txtUserRole);
+            this.tabPageUserDetail.Controls.Add(this.label5);
+            this.tabPageUserDetail.Controls.Add(this.txtUserPassword);
+            this.tabPageUserDetail.Controls.Add(this.label4);
+            this.tabPageUserDetail.Controls.Add(this.txtUserName);
+            this.tabPageUserDetail.Controls.Add(this.label3);
+            this.tabPageUserDetail.Controls.Add(this.txtUserId);
+            this.tabPageUserDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageUserDetail.Location = new System.Drawing.Point(4, 29);
+            this.tabPageUserDetail.Name = "tabPageUserDetail";
+            this.tabPageUserDetail.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUserDetail.Size = new System.Drawing.Size(884, 378);
+            this.tabPageUserDetail.TabIndex = 1;
+            this.tabPageUserDetail.Text = "User detail";
+            this.tabPageUserDetail.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
@@ -229,6 +238,40 @@ namespace Hotel.Views
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(59, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 20);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "User role:";
+            // 
+            // txtUserRole
+            // 
+            this.txtUserRole.Location = new System.Drawing.Point(63, 198);
+            this.txtUserRole.Name = "txtUserRole";
+            this.txtUserRole.Size = new System.Drawing.Size(380, 29);
+            this.txtUserRole.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(256, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "User password:";
+            // 
+            // txtUserPassword
+            // 
+            this.txtUserPassword.Location = new System.Drawing.Point(260, 125);
+            this.txtUserPassword.Name = "txtUserPassword";
+            this.txtUserPassword.Size = new System.Drawing.Size(183, 29);
+            this.txtUserPassword.TabIndex = 10;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -237,15 +280,15 @@ namespace Hotel.Views
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Hotel name:";
+            this.label4.Text = "User name:";
             // 
             // txtHotelName
             // 
-            this.txtHotelName.Location = new System.Drawing.Point(63, 125);
-            this.txtHotelName.Name = "txtHotelName";
-            this.txtHotelName.Size = new System.Drawing.Size(154, 29);
-            this.txtHotelName.TabIndex = 8;
-            // 
+            this.txtUserName.Location = new System.Drawing.Point(63, 125);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(154, 29);
+            this.txtUserName.TabIndex = 8;
+            //
             // label3
             // 
             this.label3.AutoSize = true;
@@ -254,18 +297,18 @@ namespace Hotel.Views
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Hotel ID:";
+            this.label3.Text = "User ID:";
             // 
-            // txtHotelId
+            // txtUserId
             // 
-            this.txtHotelId.Location = new System.Drawing.Point(63, 54);
-            this.txtHotelId.Name = "txtHotelId";
-            this.txtHotelId.ReadOnly = true;
-            this.txtHotelId.Size = new System.Drawing.Size(154, 29);
-            this.txtHotelId.TabIndex = 6;
-            this.txtHotelId.Text = "0";
+            this.txtUserId.Location = new System.Drawing.Point(63, 54);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.ReadOnly = true;
+            this.txtUserId.Size = new System.Drawing.Size(154, 29);
+            this.txtUserId.TabIndex = 6;
+            this.txtUserId.Text = "0";
             // 
-            // HotelView
+            // UserView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -274,39 +317,43 @@ namespace Hotel.Views
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "HotelView";
-            this.Text = "HotelView";
+            this.Name = "UserView";
+            this.Text = "UserView";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPageHotelList.ResumeLayout(false);
-            this.tabPageHotelList.PerformLayout();
+            this.tabPageUserList.ResumeLayout(false);
+            this.tabPageUserList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.tabPageHotelDetail.ResumeLayout(false);
-            this.tabPageHotelDetail.PerformLayout();
+            this.tabPageUserDetail.ResumeLayout(false);
+            this.tabPageUserDetail.PerformLayout();
             this.ResumeLayout(false);
-            }
+        }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPageHotelList;
+        private System.Windows.Forms.TabPage tabPageUserList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAddNew;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.TabPage tabPageHotelDetail;
+        private System.Windows.Forms.TabPage tabPageUserDetail;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtUserRole;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtUserPassword;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtHotelName;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtHotelId;
+        private System.Windows.Forms.TextBox txtUserId;
         private System.Windows.Forms.Button btnClose;
 
     }

@@ -25,6 +25,10 @@ namespace Hotel
             IMainView view = new MainView();
             new MainPresenter(view, sqlConnectionString);
             Application.Run((Form)view);
+
+
+
         }
+
     }
 }

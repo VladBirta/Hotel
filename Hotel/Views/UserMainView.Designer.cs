@@ -1,10 +1,7 @@
-﻿
-
-namespace Hotel.Views
+﻿namespace Hotel.Views
 {
-    partial class MainView
+    partial class UserMainView
     {
-
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -32,30 +29,28 @@ namespace Hotel.Views
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHotels = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-          
-            this.panel1.Controls.Add(this.btnHotels);
+            this.panel1.Controls.Add(this.btnUsers);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 565);
             this.panel1.TabIndex = 0;
             // 
-            // btnHotels
+            // btnUser
             // 
-            this.btnHotels.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHotels.Location = new System.Drawing.Point(3, 54);
-            this.btnHotels.Name = "btnHotels";
-            this.btnHotels.Size = new System.Drawing.Size(197, 37);
-            this.btnHotels.TabIndex = 0;
-            this.btnHotels.Text = "Hotels";
-            this.btnHotels.UseVisualStyleBackColor = true;
-
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.Location = new System.Drawing.Point(3, 54);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(197, 37);
+            this.btnUsers.TabIndex = 0;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
@@ -69,12 +64,12 @@ namespace Hotel.Views
             this.Text = "MainView";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnHotels;
+        private System.Windows.Forms.Button btnUsers;
     }
-
 }
